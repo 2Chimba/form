@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Форма</title>
+  </head>
+  <body>
+    <main>
+      <form>
+        <p><h1>Форма заявки на работу</h1>
+        <p><h3><i><tt>Заполните форму. Обязательные поля помечены <em>*</em></tt></i></h3>
+
+        <fieldset class = 'column'>
+          <legend><h3>Контактная информация</h3></legend>
+
+          <section>
+
+            <label for = "name">Имя<em>*</em> </label>
+            <input type = 'text'
+              id = "name"
+              placeholder="Введите имя"
+              autofocus
+              required><br>
+
+            <label for = "forname">Фамилия<em>*</em> </label>
+            <input type = 'text'
+              id = "foname"
+              placeholder="Введите фамилию"
+              required><br>
+
+            <label for = "surname">Отчество </label>
+            <input type = 'text'
+              id = "surname"
+              placeholder="Введите отчество"><br>
+
+            <label for = "telephone">Телефон<em>*</em> </label>
+            <input type = 'tel'
+              id = "telephone"
+              placeholder="+7 999 0123456"
+              required><br>
+
+            <label for = "email">Почта </label>
+            <input type = 'email'
+              id = "email"
+              placeholder="pochta@mail.ru"><br>
+
+          </section>
+
+          <figure>
+            Загрузите своё фото<br><br>
+            <div class = 'photo'>
+                <img src = 'photo.jpg'
+                  alt = 'Ваше фото'>
+            </div><br>
+            <figcaption>
+              <input type = "file"
+                name="загрузить фото">
+            </figcaption>
+          </figure>
+        </fieldset>
+
+        <fieldset>
+          <legend><h3>Персональная информация</h3></legend>
+
+          <label for = "age" class = 'decoration'>Возраст<em>*</em></label>
+          <input type = 'number'
+            id = 'age'
+            min = 18
+            max = 80
+            placeholder="18"
+            required><br>
+
+          <label for = "gender">Пол</label>
+
+          <input type = 'radio'
+            value = 'male'
+            id = 'male'
+            name ='gender'>
+          <label for = 'male'>Мужской</label>
+
+          <input type = 'radio'
+            value = 'female'
+            id = 'female'
+            name ='gender'>
+          <label for = 'female'>Женский</label><br>
+
+          <label for = "LC">Личные качества</label>
+          <textarea id = "LC"
+            placeholder = 'Опишите Ваши личные качества: ответсвенность, общительность, умение быстро адаптироваться и тд.'></textarea><br>
+        </fieldset>
+
+        <fieldset>
+          <legend><h3>Желаемая вакансия</h3></legend>
+
+          <label for = "vacancy">Вакансия</label>
+          <select id = 'vacancy'>
+            <option value = 'designer'>Дизайнер</option>
+            <option value = 'animator'>Аниматор</option>
+            <option value = 'web-developer'>Веб-разработчик</option>
+            <option value = 'artist'>Художник</option>
+          </select><br>
+
+          <label for = 'experience'>Стаж работы</label>
+          <input type = 'number'
+            id = 'experience'
+            min = 0
+            max = 50
+            placeholder="0"><br>
+
+          <label for = 'exp-text'>Опыт работы</label>
+          <textarea id = exp-text
+            placeholder="Опишите Ваш опыт работы ранее: предыдущее место работы, Ваши обязанности, достижения и тд."></textarea>
+        </fieldset><br>
+
+        <input type = 'checkbox'
+          value = 'agree'
+          id = 'agree'
+          required>
+        <label for = 'agree'>Я согласен на обработку персональных данных</label>
+
+        <p><input type="submit" value="Отправить информацию" class = 'send'></p>
+        <p><input type="reset" value="Заполнить заново" class = 'reset'></p>
+      </form>
+    </main>
+    <footer>
+    </footer>
+  </body>
+</html>
