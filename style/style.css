@@ -1,4 +1,4 @@
-html, input, select, textarea{
+html, input, select, textarea, button{
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
@@ -20,6 +20,11 @@ fieldset{
 }
 
 input{
+  width: 300px;
+  font-size: 16px;
+}
+
+button{
   width: 300px;
   font-size: 16px;
 }
@@ -110,7 +115,7 @@ select{
 }
 
 .send:hover, .reset:hover{
-  transform: scale(1.05);
+  transform: scale(1.02);
   background-color: white;
 }
 
